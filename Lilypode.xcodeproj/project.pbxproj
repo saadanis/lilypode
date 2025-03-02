@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		9393923B2D69A1E200923A32 /* Lilienne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lilienne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9393923B2D69A1E200923A32 /* Lilypode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lilypode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9393924B2D69A1E300923A32 /* Exceptions for "Lilienne" folder in "Lilienne" target */ = {
+		9393924B2D69A1E300923A32 /* Exceptions for "Lilypode" folder in "Lilypode" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 9393923A2D69A1E200923A32 /* Lilienne */;
+			target = 9393923A2D69A1E200923A32 /* Lilypode */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9393923D2D69A1E200923A32 /* Lilienne */ = {
+		9393923D2D69A1E200923A32 /* Lilypode */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9393924B2D69A1E300923A32 /* Exceptions for "Lilienne" folder in "Lilienne" target */,
+				9393924B2D69A1E300923A32 /* Exceptions for "Lilypode" folder in "Lilypode" target */,
 			);
-			path = Lilienne;
+			path = Lilypode;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		939392322D69A1E200923A32 = {
 			isa = PBXGroup;
 			children = (
-				9393923D2D69A1E200923A32 /* Lilienne */,
+				9393923D2D69A1E200923A32 /* Lilypode */,
 				9393923C2D69A1E200923A32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		9393923C2D69A1E200923A32 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9393923B2D69A1E200923A32 /* Lilienne.app */,
+				9393923B2D69A1E200923A32 /* Lilypode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9393923A2D69A1E200923A32 /* Lilienne */ = {
+		9393923A2D69A1E200923A32 /* Lilypode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9393924C2D69A1E300923A32 /* Build configuration list for PBXNativeTarget "Lilienne" */;
+			buildConfigurationList = 9393924C2D69A1E300923A32 /* Build configuration list for PBXNativeTarget "Lilypode" */;
 			buildPhases = (
 				939392372D69A1E200923A32 /* Sources */,
 				939392382D69A1E200923A32 /* Frameworks */,
@@ -74,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9393923D2D69A1E200923A32 /* Lilienne */,
+				9393923D2D69A1E200923A32 /* Lilypode */,
 			);
-			name = Lilienne;
+			name = Lilypode;
 			packageProductDependencies = (
 			);
 			productName = Inky;
-			productReference = 9393923B2D69A1E200923A32 /* Lilienne.app */;
+			productReference = 9393923B2D69A1E200923A32 /* Lilypode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 939392362D69A1E200923A32 /* Build configuration list for PBXProject "Lilienne" */;
+			buildConfigurationList = 939392362D69A1E200923A32 /* Build configuration list for PBXProject "Lilypode" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9393923A2D69A1E200923A32 /* Lilienne */,
+				9393923A2D69A1E200923A32 /* Lilypode */,
 			);
 		};
 /* End PBXProject section */
@@ -145,19 +145,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = Lilienne/Lilienne.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Lilypode/Lilypode.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lilienne/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lilypode/Preview Content\"";
 				DEVELOPMENT_TEAM = P8JY26RP56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lilienne/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Lilienne;
+				INFOPLIST_FILE = Lilypode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lilypode;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Lilienne needs the State of Mind data to display it in the application and calculate trends and correlations.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Lilienne needs allow users to capture their State of Mind from the application.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Lilypode needs the State of Mind data to display it in the application and calculate trends and correlations.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Lilypode needs allow users to capture their State of Mind from the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -169,7 +169,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saadanis.Lilienne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saadanis.Lilypode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -189,19 +189,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = Lilienne/Lilienne.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Lilypode/Lilypode.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Lilienne/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lilypode/Preview Content\"";
 				DEVELOPMENT_TEAM = P8JY26RP56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lilienne/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Lilienne;
+				INFOPLIST_FILE = Lilypode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lilypode;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "Lilienne needs the State of Mind data to display it in the application and calculate trends and correlations.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Lilienne needs allow users to capture their State of Mind from the application.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Lilypode needs the State of Mind data to display it in the application and calculate trends and correlations.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Lilypode needs allow users to capture their State of Mind from the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -213,7 +213,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saadanis.Lilienne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saadanis.Lilypode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		939392362D69A1E200923A32 /* Build configuration list for PBXProject "Lilienne" */ = {
+		939392362D69A1E200923A32 /* Build configuration list for PBXProject "Lilypode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9393924F2D69A1E300923A32 /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9393924C2D69A1E300923A32 /* Build configuration list for PBXNativeTarget "Lilienne" */ = {
+		9393924C2D69A1E300923A32 /* Build configuration list for PBXNativeTarget "Lilypode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9393924D2D69A1E300923A32 /* Debug */,

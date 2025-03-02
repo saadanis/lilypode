@@ -1,6 +1,6 @@
 //
 //  NewEntryView.swift
-//  Lilienne
+//  Lilypode
 //
 //  Created by Saad Anis on 22/02/2025.
 //
@@ -16,8 +16,8 @@ struct NewEntryView: View {
     
     private var initialTime = UserDefaults.standard.integer(forKey: "timerDuration")
     
-    @State private var timeRemaining = UserDefaults.standard.integer(forKey: "timerDuration")
-//    @State private var timeRemaining = 2
+//    @State private var timeRemaining = UserDefaults.standard.integer(forKey: "timerDuration")
+    @State private var timeRemaining = 2
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var isPulsing = false
@@ -47,13 +47,15 @@ struct NewEntryView: View {
     var body: some View {
         NavigationStack {
             if newEntry == nil {
-                VStack {
-                    TextEditor(text: $entryContent)
-                        .disabled(timeRemaining <= -1)
-                        .focused($isFocused, equals: true)
-                        .scrollContentBackground(.hidden)
-                        .padding(.horizontal)
-                        .padding(.bottom)
+                ZStack {
+                    VStack {
+                        TextEditor(text: $entryContent)
+                            .disabled(timeRemaining <= -1)
+                            .focused($isFocused, equals: true)
+                            .scrollContentBackground(.hidden)
+                            .contentMargins(.horizontal, 15, for: .scrollContent)
+                            .contentMargins(.bottom, 50, for: .scrollContent)
+                    }
                 }
                 .overlay {
                     if isTimerVisible {
@@ -68,6 +70,7 @@ struct NewEntryView: View {
                                     .background(Color.accentColor.opacity(0.4))
                                     .background(Material.thin)
                                     .cornerRadius(15)
+                                    .shadow(color: .accentColor.opacity(0.4), radius: 5)
                                     .scaleEffect(timerScale)
                                     .padding(.bottom)
                             } else {
@@ -81,6 +84,7 @@ struct NewEntryView: View {
                                     .background(Color("Green").opacity(0.7))
                                     .background(Material.thin)
                                     .cornerRadius(15)
+                                    .shadow(color: Color("Green").opacity(0.4), radius: 5)
                                     .padding(.bottom)
                             }
                         }
@@ -103,10 +107,6 @@ struct NewEntryView: View {
                     }
                 }
                 .background(.accent.opacity(0.2))
-//                .background(.accent.opacity(timeRemaining > 10 ?
-//                                            0.2 :
-//                                                backgroundOpacity
-//                                           ))
                 .sensoryFeedback(.increase, trigger: timeRemaining, condition: { oldValue, newValue in
                     newValue < 10 && newValue > 0
                 })

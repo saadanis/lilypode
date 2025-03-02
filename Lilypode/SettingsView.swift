@@ -1,6 +1,6 @@
 //
 //  SettingsView.swift
-//  Lilienne
+//  Lilypode
 //
 //  Created by Saad Anis on 22/02/2025.
 //

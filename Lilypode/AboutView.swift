@@ -1,6 +1,6 @@
 //
 //  AboutView.swift
-//  Lilienne
+//  Lilypode
 //
 //  Created by Saad Anis on 24/02/2025.
 //
@@ -18,7 +18,7 @@ struct AboutView: View {
                         .frame(width: 80, height: 80)
                         .cornerRadius(15)
                     VStack(alignment: .leading) {
-                        Text("Lilienne")
+                        Text("Lilypode")
                             .font(.headline)
                             .roundedFont()
                         Text("By Saad Anis")

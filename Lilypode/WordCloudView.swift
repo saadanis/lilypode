@@ -1,6 +1,6 @@
 //
 //  WordCloudView.swift
-//  Lilienne
+//  Lilypode
 //
 //  Created by Saad Anis on 23/02/2025.
 //

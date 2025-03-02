@@ -1,6 +1,6 @@
 //
 //  EntryListView.swift
-//  Lilienne
+//  Lilypode
 //
 //  Created by Saad Anis on 22/02/2025.
 //
@@ -116,9 +116,11 @@ struct EntryListView: View {
 }
 
 struct EntryListItemView: View {
-    
+
     var entry: Entry
     var dateFormatter: DateFormatter
+    
+    var calendar: Calendar = .current
     
     var date: String {
         dateFormatter.dateFormat = "dd"
@@ -127,45 +129,42 @@ struct EntryListItemView: View {
     
     var day: String {
         dateFormatter.dateFormat = "EEEE"
+        if calendar.isDateInToday(entry.timestamp) {
+            return "Today"
+        }
+        if calendar.isDateInYesterday(entry.timestamp) {
+            return "Yesterday"
+        }
         return dateFormatter.string(from: entry.timestamp)
     }
     
     var body: some View {
-        ZStack {
-            HStack {
-                Text(date)
-                    .font(.system(size: 50, weight: .black, design: .rounded))
-                    .foregroundStyle(
-                        LinearGradient(stops: [
-                            .init(color: .accent.opacity(0.6), location: 0),
-                            .init(color: .accent.opacity(0), location: 1)
-                        ], startPoint: .topLeading, endPoint: .trailing)
-//                        .accent.opacity(0.2)
-                    )
-                    .scaleEffect(2.5) // Adjust scale to control visibility
-                    .rotationEffect(.degrees(-10))
-                    .blur(radius: 5)
-                    .padding(.leading, -10)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            VStack(alignment: .leading) {
-                Text(day.uppercased())
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.accent)
-                    .roundedFont()
-                Text(entry.timestamp.formatted(date: .numeric, time: .omitted))
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundStyle(.secondary)
-                    .roundedFont()
-                Text(entry.content)
-                    .lineLimit(2...4)
-                    .roundedFont()
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-//            .padding(.leading)
-        }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(date)
+                            .foregroundStyle(.accent)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .frame(width: 46, alignment: .center)
+//                            .frame(width: 55, height: 55, alignment: .center)
+//                            .background(.accent.opacity(0.2))
+//                            .cornerRadius(8)
+                        VStack(alignment: .leading) {
+                            Text(day.uppercased())
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundStyle(.accent)
+                            Text(entry.timestamp.formatted(date: .omitted, time: .standard))
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                    .padding(.bottom, 1)
+                    Text(entry.content)
+                        .lineLimit(2...4)
+                }
+                .roundedFont()
     }
 }
 
